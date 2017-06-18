@@ -24,4 +24,4 @@ test:
 	cat output_small.txt
 
 clean:
-	rm -rf *.o sha output*
+	rm -rf *.o sha output* gmon.out profile.stats
