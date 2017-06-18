@@ -1,0 +1,1 @@
+gprof sha256 > profile.stats
