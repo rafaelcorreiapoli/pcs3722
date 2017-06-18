@@ -14,6 +14,10 @@ sha:	sha_driver.o sha.o
 shapg:
 	$(CC) -o sha sha.c sha_driver.c -g -pg
 
+profile:
+	./sha input_large.asc
+	gprof sha > profile.stats
+
 test:
 	rm output_small.txt
 	./runme_small.sh
